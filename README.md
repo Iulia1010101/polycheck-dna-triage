@@ -1,6 +1,6 @@
 # Polycheck - DNA triage scanner
 
-Polycheck is a local, first-pass triage tool for FASTA, FASTQ, and JSON sequence files. It reports a cautious triage hint and candidate coordinates for regions with text-like byte statistics under two fixed hypotheses. It never displays decoded text, infers XOR keys, or claims that a sequence is safe or harmful. The strongest ASCII-based verdict now requires 20 adjacent high-scoring windows; isolated peaks remain visible as review candidates. This is a provisional guard against whole-genome false alarms, not a validated statistical threshold.
+Polycheck is a local, first-pass triage tool for FASTA, FASTQ, and JSON sequence files. It reports a cautious triage hint and candidate coordinates for regions with text-like byte statistics under two fixed hypotheses. It never displays decoded text, infers XOR keys, or claims that a sequence is safe or harmful. Without a matched host reference, the strongest ASCII-based verdict requires 20 adjacent high-scoring windows. With a reference, common same-length host-background signals are downweighted, while a rare strong signal in a short record can reach manual recheck. These are provisional heuristics, not validated statistical thresholds.
 
 ## Run locally
 
