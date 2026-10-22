@@ -1,0 +1,25 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local credentials and Streamlit secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Runtime logs and local reference cache
+*.log
+.polycheck/
+
+# Uploaded sequence data and local datasets
+*.fa
+*.fasta
+*.fna
+*.fq
+*.fastq
+data/
+datasets/
+
